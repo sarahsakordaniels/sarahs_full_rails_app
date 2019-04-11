@@ -1,0 +1,8 @@
+<%= form_for @beer do |f|%>
+<%= f.label :name %>
+<%= f.text_field :name %>
+<%= f.label :flavor %>
+<%= f.text_field :flavor %>
+<%= f.submit%>
+<%= button_to "Delete Beer", beer_path(@beer), method: :delete %>
+<%end %>
